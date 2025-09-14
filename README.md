@@ -10,8 +10,6 @@ This project implements linear regression using gradient descent from scratch (w
 
 ## Setup and Execution
 
-### Option 1: Google Colab (Recommended)
-
 1. **Open Google Colab**
    - Go to [colab.research.google.com](https://colab.research.google.com)
    - Click "New notebook"
@@ -28,25 +26,6 @@ This project implements linear regression using gradient descent from scratch (w
      ```
    - Run the cell (Shift + Enter)
    - Authenticate Google Drive access when prompted
-
-### Option 2: Local Jupyter Notebook
-
-1. **Install Dependencies**
-   ```bash
-   pip install numpy pandas matplotlib jupyter
-   ```
-
-2. **Place Dataset**
-   - Put `D3.csv` in the same folder as your notebook
-   - Update the file path in the code:
-     ```python
-     file_path = 'D3.csv'  # Local file path
-     ```
-
-3. **Run Jupyter**
-   ```bash
-   jupyter notebook
-   ```
 
 ## What the Code Does
 
@@ -75,42 +54,6 @@ The code will generate:
 - Predictions for specified test points
 - Comprehensive analysis summary
 
-## Generating PDF Report
-
-### In Google Colab:
-1. After running all code: File → Print
-2. Choose "Save as PDF"
-3. This creates your code + results PDF
-
-### In Jupyter:
-1. File → Download as → PDF via LaTeX
-2. Or use: File → Print Preview → Save as PDF
-
-## Troubleshooting
-
-**File Path Issues:**
-- Verify the exact path to your CSV file
-- In Colab, use the file browser (folder icon) to find the correct path
-
-**Missing Libraries:**
-- All required libraries are pre-installed in Google Colab
-- For local setup, install using pip as shown above
-
-**Plots Not Showing:**
-- Add `%matplotlib inline` at the beginning of your notebook
-
-**Memory/Runtime Issues:**
-- Restart runtime: Runtime → Restart runtime (in Colab)
-- Or restart kernel in Jupyter
-
-## Dataset Format
-
-The code expects a CSV file with:
-- Column 1: X1 (first explanatory variable)
-- Column 2: X2 (second explanatory variable) 
-- Column 3: X3 (third explanatory variable)
-- Column 4: Y (dependent variable)
-
 ## Key Results
 
 After running, you'll have all the information needed to answer:
@@ -120,7 +63,3 @@ After running, you'll have all the information needed to answer:
 4. Multiple regression model equation
 5. Predictions for new data points
 6. Comparative analysis between single vs. multiple variable models
-
----
-
-**Note:** This implementation uses gradient descent from scratch without ML libraries like scikit-learn, as required by the homework assignment.
